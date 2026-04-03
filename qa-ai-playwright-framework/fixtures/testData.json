@@ -1,0 +1,41 @@
+{
+  "validSR": {
+    "title": "Login Issue",
+    "priority": "High",
+    "description": "User unable to login"
+  },
+
+  "invalidSR": {
+    "title": "",
+    "priority": "InvalidPriority",
+    "description": ""
+  },
+
+  "users": {
+    "admin": {
+      "username": "admin_user",
+      "password": "Admin@123",
+      "role": "Admin"
+    },
+    "agent": {
+      "username": "agent_user",
+      "password": "Agent@123",
+      "role": "Agent"
+    },
+    "viewer": {
+      "username": "viewer_user",
+      "password": "Viewer@123",
+      "role": "Viewer"
+    }
+  },
+
+  "dashboard": {
+    "expectedMinSRCount": 1,
+    "validStatuses": ["New", "In Progress", "Resolved", "Closed"]
+  },
+
+  "api": {
+    "baseEndpoint": "/api/sr",
+    "timeout": 5000
+  }
+}
